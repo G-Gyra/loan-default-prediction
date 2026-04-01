@@ -1,5 +1,21 @@
-data/
-models/*.pkl
+# Entorno virtual (ESTO ES LO MÁS IMPORTANTE)
+venv/
+env/
+
+# Archivos temporales de Python y Jupyter
 __pycache__/
 .ipynb_checkpoints/
+*.py[cod]
+
+# Datos (No subimos el CSV para no saturar GitHub)
+data/
+*.csv
+*.xlsx
+
+# Modelos entrenados (Suelen ser archivos pesados)
+models/*.pkl
+models/*.joblib
+
+# Seguridad y sistema
 .env
+.DS_Store
